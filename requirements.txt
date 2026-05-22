@@ -1,4 +1,4 @@
-requirements for the usability of website:
 Flask
 flask-cors
 mysql-connector-python
+gunicorn
