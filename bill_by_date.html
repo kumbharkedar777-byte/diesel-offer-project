@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bill By Date</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body style="background:#f2f4f7;">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-dark bg-primary px-3">
+
+        <div class="container-fluid">
+
+            <h3 class="text-white">
+                Bill By Date
+            </h3>
+
+            <a href="idx.html"
+               class="btn btn-light">
+
+                Back
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- SEARCH SECTION -->
+
+    <div class="container mt-5">
+
+        <div class="card shadow p-4">
+
+            <h3 class="mb-4">
+                Search Bills By Date
+            </h3>
+
+            <div class="row g-3">
+
+                <!-- FROM DATE -->
+
+                <div class="col-md-5">
+
+                    <label class="form-label">
+                        From Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fromDate"
+                        class="form-control"
+                    >
+
+                </div>
+
+                <!-- TO DATE -->
+
+                <div class="col-md-5">
+
+                    <label class="form-label">
+                        To Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="toDate"
+                        class="form-control"
+                    >
+
+                </div>
+
+                <!-- BUTTON -->
+
+                <div class="col-md-2 d-flex align-items-end">
+
+                    <button
+                        class="btn btn-primary w-100"
+                        onclick="searchBillsByDate()">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="container mt-4">
+
+        <div class="card shadow p-4">
+
+            <h3 class="mb-4">
+                Bill Records
+            </h3>
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Mobile</th>
+                            <th>Vehicle</th>
+                            <th>Bill No</th>
+                            <th>Liters</th>
+                            <th>Date</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="billTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- TOTAL FUEL -->
+
+            <div class="mt-4">
+
+                <h4>
+
+                    Total Fuel:
+                    <span id="totalFuel">
+                        0
+                    </span>
+                    Liters
+
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="bill_by_date.js"></script>
+
+</body>
+
+</html>
