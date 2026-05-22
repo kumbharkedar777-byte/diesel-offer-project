@@ -8,14 +8,14 @@ CORS(app)
 # =========================
 # MYSQL CONNECTION
 # =========================
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="123",
-    database="diesel_offer"
-)
+#db = mysql.connector.connect(
+    #host="localhost",
+    #user="root",
+    #password="123",
+   # database="diesel_offer"
+#)
 
-cursor = db.cursor()
+#cursor = db.cursor()
 
 print("Database Connected Successfully!")
 
