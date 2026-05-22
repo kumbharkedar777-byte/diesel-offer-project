@@ -7,16 +7,16 @@ CORS(app)
 
 # MySQL Connection
 
-db = mysql.connector.connect(
+#db = mysql.connector.connect(
 
-    host="localhost",
-    user="root",
-    password="123",
-    database="diesel_offer"
+#    host="localhost",
+ #   user="root",
+  #  password="123",
+   # database="diesel_offer"
 
-)
+#)
 
-cursor = db.cursor()
+#cursor = db.cursor()
 
 print("Database Connected Successfully!")
 
@@ -653,4 +653,3 @@ if __name__ == "__main__":
         host="0.0.0.0",
         port=5000
     )
-    
