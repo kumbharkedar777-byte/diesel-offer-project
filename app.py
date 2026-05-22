@@ -32,7 +32,7 @@ def login_page():
 # =========================
 @app.route("/home")
 def home():
-    return render_template("home.html")
+    return render_template("/templates/idx.html")
 
 
 # =========================
